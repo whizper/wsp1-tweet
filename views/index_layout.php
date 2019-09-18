@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -19,7 +19,7 @@
             </h5>
         <div class="card-body">
           <h5 class="card-title">Super Tweet</h5>
-          <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam quos deleniti commodi dolorem, dolorum blanditiis dolore amet praesentium reiciendis autem pariatur nesciunt, sequi perferendis dolor alias iste, ea doloribus. Explicabo.
+          <p class="card-text">
               <?= $row['body'] ?>
           </p>
         </div>
