@@ -14,11 +14,12 @@ try {
     print "Error!: " . $e->getMessage() . "<br/>";
     die();
 }
-$sth = $dbh->prepare('SELECT * FROM tweet
+$sth = $dbh->prepare('SELECT tweet.*, users.name FROM tweet
             JOIN users
             ON tweet.user_id = users.id
             WHERE tweet.id =' . $tweetId);
 $sth->execute();
-$result = $sth->fetch(PDO::FETCH_ASSOC);
-print_r($result);
+$row = $sth->fetch(PDO::FETCH_ASSOC);
+
+include 'views/index_layout.php';
 ?>
