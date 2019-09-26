@@ -48,7 +48,16 @@
         <div class="card-footer text-muted">
           <button type="button" class="btn btn-primary">Like</button>
           <button type="button" class="btn btn-primary">Comment</button>
-          <button type="button" class="btn btn-primary">Share</button>
+          <div class="btn-group" role="group">
+    <button id="btnGroupDrop1" type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+     Share 
+    </button>
+    <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+      <a class="dropdown-item" href="https://sv-se.facebook.com/">Facebook</a>
+      <a class="dropdown-item" href="https://www.instagram.com/?hl=sv">Instagram</a>
+      <a class="dropdown-item" href="https://www.snapchat.com/">Snapchat</a>
+    </div>
+  </div>
         </div>
         </section>
     <?php endforeach ?>
